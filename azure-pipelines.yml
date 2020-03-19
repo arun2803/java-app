@@ -27,8 +27,3 @@ stages:
         dockerfile: '$(Build.SourcesDirectory)/Dockerfile'
         tags: |
           $(tag)
-    - task: Docker@3
-      inputs:
-        containerRegistry: 'a2803ksdocker'
-        repository: 'java-app'
-        command: 'push'
